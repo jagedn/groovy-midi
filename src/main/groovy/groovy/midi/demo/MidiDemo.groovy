@@ -6,7 +6,7 @@ import groovy.transform.CompileStatic
 @CompileStatic
 class MidiDemo {
 
-    static void main(args) {
+    static def fur_elise(){
 // tag::fur_elise[]
         GroovyMidi.play {
             channel(0) {
@@ -24,6 +24,9 @@ class MidiDemo {
             }
         }
 // end::fur_elise[]
+    }
+
+    static def aqualung(){
 // tag::aqualung[]
         GroovyMidi.play {
             channel(0) {
@@ -39,7 +42,9 @@ class MidiDemo {
             }
         }
 // end::aqualung[]
+    }
 
+    static def smoke(){
 // tag::smoke[]
         GroovyMidi.play {
             channel(0) {
@@ -71,5 +76,11 @@ class MidiDemo {
             }
         }
 // end::smoke[]
+    }
+
+    static void main(args) {
+        fur_elise()
+        aqualung()
+        smoke()
     }
 }

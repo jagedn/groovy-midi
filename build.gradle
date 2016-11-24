@@ -20,7 +20,8 @@ dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.7'
 }
 
-mainClassName = 'groovy.midi.demo.MidiDemo'
+//mainClassName = 'groovy.midi.demo.MidiDemo'
+mainClassName = 'groovy.midi.demo.Piano'
 
 groovydoc.docTitle = "Groovy MIDI DSL"
 groovydoc.destinationDir = new File(buildDir, 'docs/api')
